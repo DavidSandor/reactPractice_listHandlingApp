@@ -1,0 +1,25 @@
+.list-item {
+    list-style: none;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.list-item input {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.list-item p {
+    display: inline-block;
+}
+
+.list-item-done {
+    background-color: green;
+}
