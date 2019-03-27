@@ -6,7 +6,8 @@ class ListItem extends Component {
     
         this.state = {
             title: props.title,
-            isChecked: false
+            isChecked: false,
+            removeClickHandler: props.removeClick
         };
     }
 
@@ -26,8 +27,9 @@ class ListItem extends Component {
 
       return (
         <li className={listItemClasses}>
-            <input type='checkbox' checked={this.state.isChecked} onClick={this.checkHandler}></input>
+            <input type='checkbox' checked={this.state.isChecked} onChange={this.checkHandler}></input>
             <p>{this.state.title}</p>
+            <button onClick={this.state.removeClickHandler}>Remove</button>
         </li>
       );
     }
